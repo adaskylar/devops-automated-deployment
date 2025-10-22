@@ -1,0 +1,67 @@
+==========================================
+🚀 Starting Automated Deployment
+==========================================
+Enter Git Repository URL: Enter Personal Access Token (PAT): Enter branch name (default: main): Enter Remote Server Username: Enter Remote Server IP Address: Enter SSH Key Path: Enter Application Port (e.g., 8080): ✅ User input collected successfully.
+==========================================
+📦 Cloning Repository...
+==========================================
+Repository already exists. Pulling latest changes...
+From https://github.com/adaskylar/devops-automated-deployment
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+✅ Repository ready in /mnt/c/Users/p/AppData/Local/Packages/CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc/LocalState/rootfs/home/dev_ada/devops-deploy/devops-automated-deployment/devops-automated-deployment
+==========================================
+🔐 Testing SSH connectivity to remote server...
+==========================================
+SSH connection successful
+✅ SSH connection established successfully.
+==========================================
+🛠 Preparing remote environment...
+==========================================
+Updating system packages...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://eu-north-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+2 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following upgrades have been deferred due to phasing:
+  distro-info-data sosreport
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Installing Docker, Docker Compose, and Nginx...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+docker.io is already the newest version (28.2.2-0ubuntu1~24.04.1).
+docker-compose is already the newest version (1.29.2-6ubuntu1).
+nginx is already the newest version (1.24.0-2ubuntu7.5).
+0 upgraded, 0 newly installed, 0 to remove and 2 not upgraded.
+Enabling and starting Docker and Nginx...
+Synchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+✅ Remote environment setup complete.
+==========================================
+📂 Transferring project files to remote server...
+==========================================
+scp: dest open "/home/ubuntu/app/.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.idx": Permission denied
+scp: upload "./.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.idx" to "/home/ubuntu/app/.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.idx" failed
+scp: dest open "/home/ubuntu/app/.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.pack": Permission denied
+scp: upload "./.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.pack" to "/home/ubuntu/app/.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.pack" failed
+scp: dest open "/home/ubuntu/app/.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.rev": Permission denied
+scp: upload "./.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.rev" to "/home/ubuntu/app/.git/objects/pack/pack-120715b2a73ec63b62942af1c5c2f10fee7d5207.rev" failed
+scp: failed to upload directory . to /home/ubuntu/app
