@@ -1,0 +1,11 @@
+==========================================
+🚀 Starting Automated Deployment
+==========================================
+Enter Git Repository URL: Enter Personal Access Token (PAT): Enter branch name (default: main): Enter Remote Server Username: Enter Remote Server IP Address: Enter SSH Key Path: Enter Application Port (e.g., 8080): ✅ User input collected successfully.
+==========================================
+📦 Cloning Repository...
+==========================================
+Cloning repository...
+Cloning into 'devops-automated-deployment'...
+fatal: Remote branch main not found in upstream origin
+❌ Failed to clone repository. Check your URL or PAT.
